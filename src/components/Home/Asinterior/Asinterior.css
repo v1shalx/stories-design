@@ -1,0 +1,110 @@
+/* Common styles for both desktop and mobile */
+.asinterior-container {
+    display: flex;
+}
+
+.asinteriorleft-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.asinteriorleft-side h5 {
+    font-size: 13px;
+    color: #511527;
+    margin-top: 5px;
+}
+
+.asinteriorright-side {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.asinteriorright-side-content {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #511527;
+}
+
+.know-more-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.know-more-button:hover {
+    background-color: #2980b9;
+}
+
+.primary-btnknowmore {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #511527;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px 7px 0px 0px;
+    width: 30%; /* Full width for desktop */
+}
+
+.primary-btnknowmore span {
+    width: 90px;
+    height: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.primary-btnknowmore::after {
+    content: '\00a0→';
+    margin-left: 10px;
+}
+
+.primary-btnknowmore:hover {
+    background-color: #bb9c21;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .asinteriorright-side,
+    .asinteriorleft-side {
+        flex: 1; /* Equal width for mobile */
+        width: 100%; /* Full width for mobile */
+        order: 2; /* Change the order for mobile */
+    }
+    
+    .asinteriorright-side {
+        padding: 20px;
+    }
+
+    .primary-btnknowmore {
+        width: 100%; /* Full width for mobile */
+    }
+    .left-title{
+        font-size: 10px;
+    }
+}
+
+.left-title{
+    font-size: 45px;
+    color: #511527;
+}
+
+@media only screen and (min-width: 769px) {
+    .asinteriorleft-side .left-title {
+        font-size: 45px; /* Font size for desktop */
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .asinteriorleft-side .left-title {
+        font-size: 30px; /* Font size for desktop */
+    }
+}

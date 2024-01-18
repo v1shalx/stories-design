@@ -1,0 +1,108 @@
+.portfolio-container {
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #511527;
+}
+
+.portfolio-divider {
+    border: 1px solid #0a0000;
+    width: 5%;
+    margin: 0 auto 20px;
+}
+
+.portfolio-box {
+    display: inline-block;
+    width: 40%; /* Adjust the width based on your design */
+    margin: 0 2.5%; /* Adjust the margin for spacing between boxes */
+    box-sizing: border-box;
+}
+
+.box-content {
+    border: 1px solid #ddd;
+}
+
+.portfolio-info {
+    background: #c4b374;
+    padding: 20px;
+}
+
+.portfolio-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.know-more-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.portfolio-category {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .portfolio-box {
+        width: 100%; /* Make the box full width on smaller screens */
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.portfolio-image:hover::after {
+    content: "+"; /* Add the + sign content */
+    position: absolute; /* Position it absolutely within the image container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it within the image */
+    font-size: 30px; /* Adjust the font size as needed */
+    color: white; /* Set the desired color */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+

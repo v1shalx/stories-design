@@ -1,0 +1,72 @@
+/* WeOperate.css */
+.we-operate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #511527;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    margin: 10px; /* Add margin for better spacing between columns */
+  }
+  
+  /* Optional: Add styling for the text or customize as needed */
+  .column button {
+    margin: 0;
+    padding: 10px; /* Adjust padding for the button */
+    font-size: 18px;
+    color: white;
+   background-color: #511527;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 150px;
+    height: 59px;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect */
+  .column button:hover {
+    background-color: #ae8210; /* Adjust the background color on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+    transform: translateX(5px);
+  }
+
+
+  .button {
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Remove the hover effect when not in hover state */
+  .button:not(:hover) {
+    transform: translateX(0);
+  }
+  
+  .column1 {
+    color: white;
+    font-size: 30px;
+  }
+  
+  /* Add gap between Residential and Retail */
+  .gap {
+    margin-bottom: 10px; /* Adjust the value for the desired gap */
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .we-operate-container {
+      flex-direction: column;
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .column {
+      flex: 100%;
+    }
+  }
+  

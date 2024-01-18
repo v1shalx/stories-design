@@ -1,0 +1,147 @@
+/* Footer.css */
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: #511527;
+    color: #c4b374;
+    font-size: 18px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+  }
+  
+  .sub-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px dashed #ccc; /* Change to dashed line */
+    margin: 10px auto; /* Center the divider */
+    width: 100%; /* Set the desired width */
+  }
+  
+  
+  @media (min-width: 768px) {
+    /* Add additional styles for larger screens if needed */
+    .footer-container {
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+  
+  /* Updated styles for second column in Footer.css */
+
+.quick-links {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sub-column {
+    flex: 1;
+    padding: 0 10px; /* Adjust spacing between sub-columns */
+  }
+  
+  @media (max-width: 767px) {
+    .quick-links {
+      flex-direction: column;
+    }
+  }
+  
+  /* Updated styles for second column in Footer.css */
+
+.sub-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sub-column li {
+    padding-left: 20px; /* Adjust the spacing between ">" and text */
+    position: relative;
+    text-align: left;
+  }
+  
+  .sub-column li::before {
+    content: '>';
+   
+    left: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Add this to your Footer.css */
+
+.mini-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    color: #c4b374;
+    font-size: 14px;
+    background-color: #511527;
+    
+  }
+  
+  .mini-footer .left,
+  .mini-footer .center,
+  .mini-footer .right {
+    flex: 1;
+    text-align: center;
+    
+    margin-left: 50px;
+  }
+  
+  .mini-footer a {
+    margin: 0 5px; /* Adjust the spacing between social media icons */
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Adjust the color and size of social media icons */
+  .mini-footer a i {
+    color: #c4b374;
+    font-size: 18px;
+  }
+  
+  /* Hover effect for social media icons */
+  .mini-footer a:hover {
+    color: #007bff; /* Change to the desired hover color */
+  }
+  
