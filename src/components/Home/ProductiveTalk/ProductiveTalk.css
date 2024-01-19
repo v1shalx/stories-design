@@ -119,3 +119,7 @@
 .input-box::placeholder {
     color: #090808; /* Set the desired font color for the placeholder */
 }
+
+.productivetalkleft-box{
+    height: 480px;
+}

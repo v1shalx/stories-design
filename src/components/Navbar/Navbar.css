@@ -51,3 +51,16 @@ nav .responsive_nav {
   transform: translateY(0);
 }
 
+/* Add this style to your Navbar.css file */
+/* Add this style to your Navbar.css file */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  transition: margin-top 0.3s ease; /* Add smooth transition */
+}
+
+/* Adjust the margin-top based on your actual navbar height */
+.navbar.active {
+  margin-top: 0;
+}

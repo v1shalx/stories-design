@@ -34,7 +34,7 @@ const ProductiveTalk = () => {
                     />
 
 
-                    <button className="button">Send</button>
+<a href="/about-us/" className="primary-btn"><span>Send  </span></a>
                 </div>
             </div>
 
