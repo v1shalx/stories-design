@@ -4,10 +4,10 @@ import './Clientsay.css';
 
 const Clientsay = () => {
     return (
-        <Container >
+        <clientsayContainer >
             <Row>
                 <Col md={12}>
-                    <h2 className="section-title">What our Clients say</h2>
+                    <div className="section-title">What our Clients say</div>
                     <div className="divider-dark"></div>
                 </Col>
             </Row>
@@ -115,7 +115,7 @@ const Clientsay = () => {
                     </Carousel>
                 </Col>
             </Row>
-        </Container>
+        </clientsayContainer>
     );
 };
 

@@ -1,6 +1,9 @@
-/* styles.css */
+.clientsaycontainer{
+  direction: flex;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Default styles for larger screens */
 .profile img {
   width: 906px;
   height: 490px;
@@ -11,8 +14,6 @@
   margin-top: 50px;
 }
 
-.testimonial-content {
-}
 
 .testimonial {
   background: #f4f2f2;
@@ -31,3 +32,48 @@
       width: 100%; /* Set width to 100% for responsiveness */
   }
 }
+
+
+/* Your existing styles */
+
+.section-title {
+  white-space: nowrap;
+  color: #511527;
+  font-size: 48px;
+  margin-left: 20px;
+}
+
+/* Additional styles for maintaining responsiveness */
+@media (max-width: 768px) {
+  .section-title {
+    white-space: normal; /* Allow text to wrap on smaller screens */
+    font-size: 30px;
+  }
+}
+
+
+/* Your existing styles */
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .clientsaycontainer {
+    flex-direction: column; /* Adjust the flex direction for smaller screens */
+  }
+
+  .profile img {
+    width: 100%; /* Set width to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+
+  .testimonial {
+    width: 100%; /* Set width to 100% for responsiveness */
+  }
+
+  .section-title {
+    white-space: normal; /* Allow text to wrap on smaller screens */
+    font-size: 30px;
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+

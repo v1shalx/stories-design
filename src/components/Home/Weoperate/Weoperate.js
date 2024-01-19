@@ -5,10 +5,10 @@ import './Weoperate.css';
 const WeOperate = () => {
   return (
     <div className="we-operate-container">
-      <div className="column">
-        <div className='column1'>We operate in the following categories</div>
+      <div className="columns">
+        <div className='columns1'>We operate in the following categories</div>
       </div>
-      <div className="column">
+      <div className="columns">
         <div>
           <button className='button'>Residential</button>
         </div>
@@ -16,7 +16,7 @@ const WeOperate = () => {
           <button className='button'>Retail</button>
         </div>
       </div>
-      <div className="column">
+      <div className="columns">
         <div>
           <button className='button'>Commercial</button>
         </div>
@@ -24,7 +24,7 @@ const WeOperate = () => {
           <button className='button'>Retail</button>
         </div>
       </div>
-      <div className="column">
+      <div className="columns">
         <div>
           <button className='button'>Residential</button>
         </div>
@@ -32,7 +32,7 @@ const WeOperate = () => {
           <button className='button'>Retail</button>
         </div>
       </div>
-      <div className="column">
+      <div className="columns">
         <div>
           <button className='button'>Residential</button>
         </div>
