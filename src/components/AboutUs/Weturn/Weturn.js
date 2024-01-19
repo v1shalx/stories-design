@@ -7,7 +7,8 @@ const Weturn = () => {
     <div className="weturn-container">
       <div className="weturn-title">
         <h1>We turn spaces into art, imagination into design, and your memories into stories.</h1>
-        <hr />
+        <div className="custom-divider"></div>
+
       </div>
 
       <div className="weturn-para">
@@ -30,21 +31,42 @@ const Weturn = () => {
       </div>
 
       <div className="weturn-boxes">
-        {/* Box 1 */}
+        
         <div className="weturn-box">
           <div className="weturn-box-inner">
             <div className="weturn-box-front">
-              <img src="path_to_your_image" alt="Design Image" />
+              <img src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/Stories-Style-Capabailities.jpg" alt="Design Image" />
             </div>
             <div className="weturn-box-back">
-              <p>We Design</p>
+              <h3>We Design</h3>
+              <p>We apply creative, aesthetically attractive and technical solutions within a structure to achieve the desired environment.</p>
+            </div>
+          </div>
+        </div>
+        <div className="weturn-box">
+          <div className="weturn-box-inner">
+            <div className="weturn-box-front">
+              <img src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/Stories-Style-Capabailities.jpg" alt="Design Image" />
+            </div>
+            <div className="weturn-box-back">
+              <h3>We Design</h3>
+              <p>We apply creative, aesthetically attractive and technical solutions within a structure to achieve the desired environment.</p>
+            </div>
+          </div>
+        </div>
+        <div className="weturn-box">
+          <div className="weturn-box-inner">
+            <div className="weturn-box-front">
+              <img src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/Stories-Style-Capabailities.jpg" alt="Design Image" />
+            </div>
+            <div className="weturn-box-back">
+              <h3>We Design</h3>
               <p>We apply creative, aesthetically attractive and technical solutions within a structure to achieve the desired environment.</p>
             </div>
           </div>
         </div>
 
-        {/* Repeat similar structure for Box 2 and Box 3 */}
-        {/* ... */}
+       
       </div>
     </div>
   );
