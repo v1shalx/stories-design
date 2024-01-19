@@ -11,17 +11,28 @@ const ProductiveTalk = () => {
                 <div className="productivetalktitle">Let's have a productive talk.</div>
                 <div className="divider"></div>
                 <div className="form-box">
-                    <label className="input-label" htmlFor="name">Name</label>
-                    <input type="text" id="name" className="input-box" />
 
-                    <label className="input-label" htmlFor="email">Email</label>
-                    <input type="email" id="email" className="input-box" />
+                    <input type="text" id="name" className="input-box" placeholder='Name' />
 
-                    <label className="input-label" htmlFor="contact">Contact Us</label>
-                    <input type="tel" id="contact" className="input-box" />
 
-                    <label className="input-label" htmlFor="interested">Hello, I am interested in</label>
-                    <input type="text" id="interested" className="input-box" />
+                    <div class="input-with-icon">
+                        <input type="email" id="email" className="input-box" placeholder="Email" />
+
+                    </div>
+
+
+
+                    <input type="tel" id="contact" className="input-box" placeholder='Contact Us' />
+
+
+                    <input
+                        type="text"
+                        id="interested"
+                        className="input-box"
+                        placeholder='Hello, I am interested in'
+                        style={{ width: '100%', padding: '20px' }}
+                    />
+
 
                     <button className="button">Send</button>
                 </div>

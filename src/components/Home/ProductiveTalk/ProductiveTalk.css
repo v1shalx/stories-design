@@ -2,53 +2,60 @@
 
 .productive-talk-container {
     display: flex;
-    
-    max-width: 80%;
-    margin: 20px auto;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #d2d3b0;
+    padding: 40px;
+}
+
+.productivetalkleft-box,
+.productivetalkright-box {
+    border: 2px solid black;
+    width: 40%;
+}
+
+.productivetalkleft-box {
+   
+   
     padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .productivetalkleft-box {
-    flex: 1;
-    padding: 10px;
-    border-right: 1px solid #ddd;
-  }
-  
-  .productivetalkright-box {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .productivetalktitle {
-    font-size: 30px;
-   color: #511527;
-  }
-  
-  .divider {
+    margin-right: 40px;
+}
+.productivetalkright-box{
+    padding: 20px;
+}
+
+.productivetalktitle {
+    font-size: 50px;
+    color: #511527;
+}
+
+.divider {
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .form-box {
+}
+
+.form-box {
     margin-bottom: 20px;
-    border: 1px solid;
-    padding: 20px;
-  }
-  
-  .input-label {
+    padding: 20px; /* Adjusted padding for better consistency */
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.input-label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  .input-box {
+}
+
+.input-box {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-  }
-  
-  .button {
+    box-sizing: border-box;
+}
+
+.button {
     background-color: #511527;
     color: white;
     padding: 10px;
@@ -56,14 +63,59 @@
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-  }
-  
-  .productivetalkrighttitle{
+}
+
+.productivetalkrighttitle {
     color: #511527;
     font-size: 42px;
-  }
-  .productivetalkright p{
+}
+
+.productivetalkright p {
     color: #511527;
     font-size: 13.17px;
-    
-  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 786px) {
+    .productive-talk-container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .productivetalkleft-box,
+    .productivetalkright-box {
+        width: 100%;
+        
+    }
+
+    .productivetalktitle {
+        font-size: 24px;
+    }
+
+    .form-box {
+        padding: 10px;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .productivetalkrighttitle {
+        font-size: 30px;
+    }
+
+    .productivetalkright p {
+        font-size: 12px;
+    }
+}
+
+
+
+.input-with-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box::placeholder {
+    color: #090808; /* Set the desired font color for the placeholder */
+}

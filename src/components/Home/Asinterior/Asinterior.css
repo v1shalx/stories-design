@@ -1,6 +1,7 @@
 /* Common styles for both desktop and mobile */
 .asinterior-container {
     display: flex;
+    background: #f9f7ef;
 }
 
 .asinteriorleft-side {
