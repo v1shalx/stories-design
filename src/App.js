@@ -8,8 +8,7 @@ import Home from './pages/Home/Home';
 
 import Footer from './components/Footer/Footer';
 
-
-
+import AboutUs from './pages/AboutUs/AboutUs';
 
 
 const App = () => {
@@ -19,7 +18,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        
+        <Route path="/about-us" element={<AboutUs />} />
+
 
       </Routes>
       <Footer/>
