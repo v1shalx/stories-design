@@ -67,7 +67,7 @@
   
   @media (max-width: 767px) {
     .quick-links {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
   
