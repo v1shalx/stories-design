@@ -1,0 +1,178 @@
+/* BlackTray.css */
+.black-tray-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 100px;
+  }
+  
+  /* BlackTray.css */
+.blacktrayleft-side {
+    flex: 1;
+    margin-right: -200px;
+    z-index: 1000;
+    background:#ffffff;
+    margin-top: -100px;
+    padding: 50px;
+    max-height: 550px;  /* Limit the height */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border with opacity */
+    
+  }
+  
+  
+  .blacktrayright-side {
+    flex: 1;
+    margin-left: 20px; /* Adjust spacing between left and right sides */
+   
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    color: #511527;
+  }
+  
+  .divider-line {
+    height: 1px;
+    background-color: #b38511;
+    margin: 10px 0;
+    width: 100px;
+  }
+  
+  /* Add any additional styling as needed */
+  
+  /* BlackTray.css */
+.custom-image {
+    width: 80%; /* Adjust the percentage or use a fixed value like "400px" */
+  /* Set the height to auto to maintain the aspect ratio */
+  height: auto;
+  }
+  
+  /* Add any additional styling as needed */
+  .blacktrayleft-side p{
+    color: #511527;
+    font-size: 18px;
+
+  }
+
+
+
+
+/* Blacktray.css */
+.custom-carousel-container .carousel-control-prev,
+.custom-carousel-container .carousel-control-next {
+  color: your-desired-color; /* Change this to the color you want */
+  background-color: black; /* Add this line to set the background color */
+  border: 1px solid black; /* Optional: Add border for more styling */
+  height: 50px; /* Adjust the height as needed */
+  width: 50px;  /* Adjust the width as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+/* Optional: Hover effect for controls */
+.custom-carousel-container .carousel-control-prev:hover,
+.custom-carousel-container .carousel-control-next:hover {
+  color: your-hover-color; /* Change this to the hover color you want */
+  background-color: darkgray; /* Change this to the hover background color you want */
+  border-color: darkgray; /* Optional: Adjust border color for hover effect */
+}
+
+/* Blacktray.css */
+
+/* Common styles */
+.black-tray-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.blacktrayleft-side {
+  flex: 1;
+  margin-right: -200px;
+  z-index: 1000;
+  background: #ffffff;
+  margin-top: -100px;
+  padding: 50px;
+  max-height: 550px; /* Limit the height */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border with opacity */
+}
+
+.blacktrayright-side {
+  flex: 1;
+  margin-left: 20px; /* Adjust spacing between left and right sides */
+}
+
+.header {
+  margin-bottom: 20px;
+  color: #511527;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #b38511;
+  margin: 10px 0;
+  width: 100px;
+}
+
+.custom-image {
+  width: 80%; /* Adjust the percentage or use a fixed value like "400px" */
+  /* Set the height to auto to maintain the aspect ratio */
+  height: auto;
+}
+
+.blacktrayleft-side p {
+  color: #511527;
+  font-size: 18px;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .blacktrayleft-side,
+  .blacktrayright-side {
+    flex: 1;
+    margin: 0;
+    padding: 20px; /* Adjust padding for smaller screens */
+    max-height: none; /* Remove max-height for smaller screens */
+  }
+
+  .blacktrayleft-side {
+    order: 1; /* Change order to 1 for mobile view */
+  }
+
+  .blacktrayright-side {
+    order: 2; /* Change order to 2 for mobile view */
+  }
+
+  .custom-image {
+    width: 100%; /* Make images full width on smaller screens */
+  }
+
+  .blacktrayleft-side p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .black-tray-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 100px;
+        flex-direction: column;
+       
+        padding: 0px;
+
+      }
+   
+  }
+  
