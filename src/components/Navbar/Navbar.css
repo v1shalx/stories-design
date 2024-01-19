@@ -101,3 +101,16 @@ nav .responsive_nav {
   left: 0;
   background-color: #511527; /* Adjust the color of the underline */
 }
+
+
+
+/* Navbar.css */
+
+/* Your existing styles */
+
+/* Media query for screens up to 767px wide (typical mobile screens) */
+@media only screen and (max-width: 767px) {
+  .navbar-nav a:hover::after {
+    display: none; /* Remove the underline effect on mobile screens */
+  }
+}

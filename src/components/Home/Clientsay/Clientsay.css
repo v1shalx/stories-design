@@ -57,8 +57,9 @@
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   .clientsaycontainer {
-    flex-direction: column; /* Adjust the flex direction for smaller screens */
+    flex-direction: row; /* Adjust the flex direction for smaller screens */
     margin-left: 20px;
+    
   }
 
   .profile img {
@@ -77,4 +78,6 @@
     margin-left: 0; /* Reset margin for smaller screens */
   }
 }
+
+
 

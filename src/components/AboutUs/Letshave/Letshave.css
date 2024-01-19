@@ -69,6 +69,7 @@
   @media only screen and (max-width: 768px) {
     .letshave-container {
       padding: 10px; /* Adjust padding for mobile */
+      
     }
   
     .image-container {
@@ -100,3 +101,5 @@
     }
   }
   
+
+ 
