@@ -12,6 +12,8 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${isMenuOpen ? 'active' : ''}`}>
+    <div className="container-fluid">
+    
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img
@@ -77,8 +79,11 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
+
+
