@@ -100,12 +100,46 @@
 
 @media only screen and (min-width: 769px) {
     .asinteriorleft-side .left-title {
-        font-size: 45px; /* Font size for desktop */
+        font-size: 30px; /* Font size for desktop */
     }
 }
 
 @media only screen and (max-width: 769px) {
+    .asinterior-container {
+        display: flex;
+        background: #f9f7ef;
+        display: column;
+    }
     .asinteriorleft-side .left-title {
         font-size: 30px; /* Font size for desktop */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Your existing styles */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .asinterior-container {
+      flex-direction: column;
+    }
+  
+    .asinteriorleft-side,
+    .asinteriorright-side {
+      width: 100%; /* Ensure full width on mobile */
+    }
+    .primary-btnknowmore{
+        width: 45%
+    }
+    
+  }
+  
