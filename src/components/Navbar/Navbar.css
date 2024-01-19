@@ -44,6 +44,7 @@ nav .nav-btn {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
+ 
 }
 
 nav .responsive_nav {
@@ -74,5 +75,9 @@ nav .responsive_nav {
 
   header .responsive_nav {
     transform: translateY(0);
+  }
+  .navbar-brand img{
+    margin-right: auto;
+    
   }
 }
