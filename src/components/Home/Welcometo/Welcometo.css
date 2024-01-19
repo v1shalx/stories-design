@@ -109,6 +109,12 @@
       height: auto; /* Auto height on mobile */
       margin-top: 0; /* Reset top margin on mobile */
     }
+    .image-content img {
+      max-width: 100%; /* Make the image responsive */
+      max-height: 400px;
+      height: auto; /* Maintain aspect ratio */
+    }
+    
      
   
     /* Add any additional styles needed for mobile */

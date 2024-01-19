@@ -5,15 +5,15 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: auto;
+  
     background-color: #511527;
-    padding: 20px; /* Adjust padding for smaller screens */
+     /* Adjust padding for smaller screens */
   }
   
   .column {
     flex: 1;
     text-align: center;
-    margin: 10px; /* Add margin for better spacing between columns */
+   
   }
   
   /* Optional: Add styling for the text or customize as needed */
@@ -62,11 +62,41 @@
   @media screen and (max-width: 768px) {
     .we-operate-container {
       flex-direction: column;
-      padding: 10px; /* Adjust padding for smaller screens */
+      padding: 0px; /* Adjust padding for smaller screens */
     }
   
     .column {
       flex: 100%;
+      flex-direction: row;
     }
+    
   }
   
+
+  /* Your existing styles */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .we-operate-container {
+   
+    padding: 0px; 
+    margin: 0px;
+  }
+  .column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adjust as needed for spacing */
+    padding: 0px;
+  }
+  .column1{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .column > div {
+    margin-right: 10px; /* Adjust as needed for spacing between items */
+  }
+  .button{
+    padding: 0px;
+  }
+}
