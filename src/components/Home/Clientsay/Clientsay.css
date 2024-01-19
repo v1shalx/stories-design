@@ -58,6 +58,7 @@
 @media screen and (max-width: 768px) {
   .clientsaycontainer {
     flex-direction: column; /* Adjust the flex direction for smaller screens */
+    margin-left: 20px;
   }
 
   .profile img {

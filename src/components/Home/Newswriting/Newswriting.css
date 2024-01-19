@@ -81,3 +81,11 @@ padding: 5px;
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  
+  .primary-btn{
+      width: 100%
+  }
+  
+}
