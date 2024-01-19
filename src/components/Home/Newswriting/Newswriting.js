@@ -9,7 +9,7 @@ const NewsWriting = () => {
           <h1>News & Writing</h1>
         </div>
         <div className="right-side">
-        <a href="/about-us/" className="primary-btn"><span>All News  </span></a>
+        <a href="/about-us/" className="primary-btnallnews"><span>All News  </span></a>
         </div>
       </div>
       <hr className="divider" />
