@@ -1,0 +1,113 @@
+.commertial-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    padding-top: 10px;
+  }
+  
+  .commertialleft-section {
+    background: white;
+    text-align: left;
+    padding: 50px;
+    z-index: 1000;
+    width: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: -100px;
+  }
+
+
+
+ 
+
+
+  
+  .custom-divider {
+    width: 20%;
+    margin: 10px 0;
+    border-top: 2px solid #511527;
+  }
+  
+  .primary-btnrecedential {
+    background-color: #511527;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .primary-btnrecedential span {
+    font-size: 18px;
+  }
+  
+  .primary-btnrecedential::after {
+    content: '\00a0→';
+    margin-left: 10px;
+  }
+  
+  .primary-btnrecedential:hover {
+    background-color: #bb9c21;
+  }
+  
+  .commertialright-section {
+    margin-top: 20px;
+  }
+  
+  .custom-divider {
+    width: 50%;
+    border-top: 2px solid #511527;
+    margin: 10px 0;
+  }
+  
+  .commertialleft-section h2 {
+    color: #511527;
+    font-size: 28px;
+  }
+  
+  .commertialleft-section p {
+    color: #511527;
+    font-size: 18px;
+  }
+  
+  .commertialright-section img {
+    width: 100%;
+    height: 500px;
+   
+  }
+  
+  @media (max-width: 768px) {
+    .commertial-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .commertialleft-section{
+      
+       width: 100%;
+       margin-right: 0px;
+       margin-left: 10px;
+       margin-top: 10px;
+    }
+  
+   
+  
+    .custom-divider {
+      width: 100%;
+    }
+  
+    .primary-btnrecedential {
+      padding: 15px;
+    }
+    .commertialright-section img{
+        height: 300px;
+        width: 100%;
+    }
+    .commertialright-section {
+        order: 1; /* Change the order of this item to come before the left section */
+        margin-top: 20px; /* Add some space between the sections */
+      }
+  }
+  
