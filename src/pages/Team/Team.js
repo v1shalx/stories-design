@@ -4,13 +4,15 @@ import React from 'react';
 import Revathi from '../../components/Team/Revathi/Revathi';
 import Teamcard from '../../components/Team/Teamcard/Teamcard';
 
-
+import './Team.css'
 const Team = () => {
   const textStyle = {
     textAlign: 'center',
     color: 'brown',
     fontSize: '20px',
-    paddingTop: '100px', // Add padding top here
+    paddingTop: '120px', // Add padding top here\
+    width:'100%'
+    
   };
 
   return (
