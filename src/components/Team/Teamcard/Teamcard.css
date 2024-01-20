@@ -1,0 +1,140 @@
+/* Teamcard.css */
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.card-info {
+    text-align: center;
+    
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+    background-color: #efede3;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    transform: rotate(180deg);
+    padding: 20px;
+}
+
+.name {
+    font-weight: bold;
+    background: #c3b473;
+    padding: 0px;
+    padding: 20px;
+}
+
+.card-img-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: black;
+   
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 60px;
+    margin-left: 20px;
+    
+   
+}
+
+.team-card:hover .card-img {
+   
+    opacity: 0.3;
+}
+
+.team-card:hover .card-hover-text {
+    opacity: 1;
+}
+
+/* Updated to ensure 2 cards per row */
+@media (min-width: 768px) {
+    .team-card {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+   
+}
+
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%; /* Adjust the max-width to your preference */
+    margin: 0 auto; /* Center the team-container */
+}
+
+.team-card {
+    width: 45%; /* Adjust the width */
+    margin: 2.5%; /* Adjust the margin for better spacing */
+    position: relative;
+    overflow: hidden;
+   
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+/* Updated to ensure 2 cards per row */
+@media (min-width: 768px) {
+    .team-card {
+        width: 48%;
+        margin: 1%;
+    }
+   
+}
+
+
+@media (max-width: 768px) {
+    .card-hover-text p {
+        font-size: 10px; /* Set a smaller font size for mobile */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team-card {
+        width: 100%;
+        
+    }
+    
+   
+}

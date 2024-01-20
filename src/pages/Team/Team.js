@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Revathi from '../../components/Team/Revathi/Revathi';
+import Teamcard from '../../components/Team/Teamcard/Teamcard';
+
 
 const Team = () => {
   const textStyle = {
@@ -18,6 +20,7 @@ const Team = () => {
       </div>
       <div className="revathi-container">
         <Revathi />
+       <Teamcard/>
       </div>
     </div>
   );
