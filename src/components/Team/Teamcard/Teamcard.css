@@ -126,6 +126,8 @@
 @media (max-width: 768px) {
     .card-hover-text p {
         font-size: 10px; /* Set a smaller font size for mobile */
+        padding: 0px;
+        margin: 0px;
     }
 }
 
@@ -134,6 +136,10 @@
     .team-card {
         width: 100%;
         
+    }
+    .vertical-text {
+       
+        padding: 10px;
     }
     
    
