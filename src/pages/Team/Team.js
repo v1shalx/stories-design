@@ -18,7 +18,7 @@ const Team = () => {
 
   return (
     <div className="team-container">
-      <div style={textStyle}>
+      <div className='team-heading' style={textStyle}>
         “If everyone is moving forward together, then success takes care of itself.” – Henry Ford
       </div>
       <div className="revathi-container">
