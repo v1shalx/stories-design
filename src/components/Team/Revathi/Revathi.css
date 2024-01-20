@@ -48,13 +48,16 @@
   /* Media query for mobile devices */
   @media (max-width: 768px) {
     .revathi-container {
-      padding: 20px; /* Adjust padding on mobile */
+     
       flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 15px;
     }
   
     .revathiright {
       margin-top: 20px; /* Adjust margin-top on mobile */
-      margin-left: 0; /* Remove margin-left on mobile */
+      margin-left: 0px; /* Remove margin-left on mobile */
     }
   
     .revathileft img {

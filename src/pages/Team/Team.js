@@ -13,6 +13,7 @@ const Team = () => {
     paddingTop: '120px', // Add padding top here\
     width:'100%'
     
+    
   };
 
   return (

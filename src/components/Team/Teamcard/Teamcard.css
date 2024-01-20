@@ -119,6 +119,8 @@
         width: 48%;
         margin: 1%;
     }
+    
+    
    
 }
 
@@ -129,12 +131,24 @@
         padding: 0px;
         margin: 0px;
     }
+    .card-container{
+        margin: 0px;
+        padding: 0px;
+    }
+    .team-container{
+        margin: 0px;
+        padding: 0px;
+    }
+    
 }
 
 
 @media (max-width: 768px) {
     .team-card {
         width: 100%;
+       
+        margin-right: opx;
+        padding: 0px;
         
     }
     .vertical-text {
