@@ -23,8 +23,9 @@ const Team = () => {
       </div>
       <div className="revathi-container">
         <Revathi />
-       <Teamcard/>
+       
       </div>
+      <Teamcard/>
     </div>
   );
 };

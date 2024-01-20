@@ -144,17 +144,11 @@
 
 
 @media (max-width: 768px) {
-    .team-card {
-        width: 100%;
-       
-        margin-right: opx;
-        padding: 0px;
-        
-    }
-    .vertical-text {
-       
-        padding: 10px;
-    }
-    
-   
-}
+  
+  .team-card {
+    margin: 0px;
+    padding: 0px;
+   margin-left: 60px;
+   margin-top: 50px;
+
+  }}
