@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Career from './pages/Career/Career';
 import Ourwork from './pages/Ourwork/Ourwork';
+import Team from './pages/Team/Team';
 
 
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/career" element={<Career />} />
         <Route path="/our-work" element={<Ourwork />} />
+        <Route path="/team" element={<Team />} />
+
 
 
 

@@ -1,0 +1,64 @@
+/* Revathi.css */
+
+.revathi-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 50px;
+    align-items: flex-start;
+  }
+  
+  .revathileft {
+    flex: 1;
+  }
+  
+  .revathileft img {
+    width: 600px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .revathiright {
+    flex: 2;
+    padding: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-left: 0; /* Remove margin-left on mobile */
+    background-color: white;
+    margin-top: 40px; /* Adjust margin-top on mobile */
+    margin-left: -100px;
+  }
+  
+  .revathiright h2 {
+    color: #511527;
+  }
+  
+  .revathiright p {
+    color: #511527;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .custom-line {
+    border-bottom: 1px solid #000;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .revathi-container {
+      padding: 20px; /* Adjust padding on mobile */
+      flex-direction: column;
+    }
+  
+    .revathiright {
+      margin-top: 20px; /* Adjust margin-top on mobile */
+      margin-left: 0; /* Remove margin-left on mobile */
+    }
+  
+    .revathileft img {
+      width: 100%; /* Make the image responsive to its container on mobile */
+    }
+  }
+  
