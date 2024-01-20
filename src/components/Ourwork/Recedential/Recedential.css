@@ -1,0 +1,100 @@
+.recedential-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+  }
+  
+  .recedentialleft-section {
+    background: white;
+    text-align: left;
+    padding: 50px;
+    z-index: 1000;
+    width: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.8); /* Adjust the alpha value as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjust the shadow values as needed */
+    margin-right: -100px;
+  }
+  
+  .custom-divider {
+    width: 20%;
+    margin: 10px 0;
+    border-top: 2px solid #511527; /* Adjust the color as needed */
+  }
+  
+  .primary-btnrecedential {
+    background-color: #511527;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .primary-btnrecedential span {
+    font-size: 18px;
+  }
+  
+  .primary-btnrecedential::after {
+    content: '\00a0→';
+    margin-left: 10px;
+  }
+  
+  .primary-btnrecedential:hover {
+    background-color: #bb9c21;
+  }
+  
+  .recedentialright-section {
+    margin-top: 20px;
+  }
+  
+  .custom-divider {
+    width: 50%;
+    border-top: 2px solid #511527; /* Adjust the color as needed */
+    margin: 10px 0;
+  }
+  
+  .recedentialleft-section h2 {
+    color: #511527;
+    font-size: 28px;
+  }
+  
+  .recedentialleft-section p {
+    color: #511527;
+    font-size: 18px;
+  }
+  
+  .recedentialright-section img {
+    width: 100%;
+    height: 500px; /* Maintain image aspect ratio */
+  }
+  
+  /* Add media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    .recedential-container {
+      flex-direction: column;
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin-top: 40px;
+    }
+  
+    .recedentialleft-section {
+      width: 100%;
+      margin-right: 0; /* Remove negative margin for smaller screens */
+    }
+  
+    .custom-divider {
+      width: 100%;
+    }
+  
+    .primary-btnrecedential {
+      padding: 15px; /* Adjust button padding for smaller screens */
+    }
+    .recedentialright-section img{
+        height: 300px;
+        width: 100%;
+    }
+
+  }
+  

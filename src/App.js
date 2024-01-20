@@ -9,6 +9,8 @@ import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 
 import AboutUs from './pages/AboutUs/AboutUs';
+import Career from './pages/Career/Career';
+import Ourwork from './pages/Ourwork/Ourwork';
 
 
 const App = () => {
@@ -19,6 +21,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/our-work" element={<Ourwork />} />
+
+
 
 
       </Routes>
