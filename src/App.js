@@ -13,7 +13,7 @@ import Career from './pages/Career/Career';
 import Ourwork from './pages/Ourwork/Ourwork';
 import Team from './pages/Team/Team';
 import Blog from './pages/Blog/Blog';
-
+import Media from './pages/Media';
 
 const App = () => {
   return (
@@ -27,6 +27,8 @@ const App = () => {
         <Route path="/our-work" element={<Ourwork />} />
         <Route path="/team" element={<Team />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/media" element={<Media />} />
+
 
 
 
