@@ -14,6 +14,7 @@ import Ourwork from './pages/Ourwork/Ourwork';
 import Team from './pages/Team/Team';
 import Blog from './pages/Blog/Blog';
 import Media from './pages/Media';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 const App = () => {
   return (
@@ -28,6 +29,8 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/Contact-us" element={<ContactUs />} />
+
 
 
 

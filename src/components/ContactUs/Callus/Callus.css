@@ -1,0 +1,47 @@
+.callus-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: #c4b374;
+  }
+  
+  .box {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px; /* Add margin for spacing between boxes */
+    background-color: white;
+    padding: 20px; /* Reduce padding for smaller screens */
+    flex: 1; /* Take up equal space in the container */
+  }
+  
+  .icon {
+    font-size: 44px;
+    margin-bottom: 10px;
+    color: #c4b374;
+  }
+  
+  .box p {
+    color: #511527;
+    font-size: 13.4px;
+  }
+  
+  .box h4 {
+    color: #c4b374;
+    font-size: 18px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .callus-container {
+      flex-direction: column; /* Stack boxes vertically on smaller screens */
+     
+    }
+  
+    .box {
+      width: 90%; /* Full width for smaller screens */
+    }
+  }
+  
