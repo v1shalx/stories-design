@@ -1,0 +1,25 @@
+/* Add your styles for StickyEnquiryButton here */
+.sticky-enquiry-button-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    right: 0;
+    padding: 0px; /* Adjust the padding as needed */
+    margin-right: -40px;
+
+   
+   
+   
+  
+   
+  }
+  
+  .enquiry-button {
+    /* Add styles for the button */
+margin: 0px;
+font-size: 30px;
+background: #c49635;
+border: none;
+color: white;
+  }
+  
