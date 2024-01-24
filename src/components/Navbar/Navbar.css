@@ -18,6 +18,7 @@ nav {
   width: 100%;
   z-index: 1000;
   background-color: var(--mainColor);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transitions */
 }
 
 nav a {
@@ -25,12 +26,12 @@ nav a {
   color: var(--textColor);
   text-decoration: none;
   font-size: 1rem;
+  position: relative;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: var(--secondaryColor);
-  
 }
 
 nav .nav-btn {
@@ -44,14 +45,13 @@ nav .nav-btn {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
- 
 }
 
+/* Updated styles for smooth opening animation */
 nav .responsive_nav {
   transform: translateY(0);
 }
 
-/* Add this style to your Navbar.css file */
 /* Add this style to your Navbar.css file */
 .navbar {
   position: fixed;
@@ -63,8 +63,8 @@ nav .responsive_nav {
 /* Adjust the margin-top based on your actual navbar height */
 .navbar.active {
   margin-top: 0;
+  background-color: var(--mainColor); /* Background color when menu is open */
 }
-
 
 /* Default styling for larger screens */
 .navbar-brand img {
@@ -78,39 +78,64 @@ nav .responsive_nav {
     width: 150px; /* Adjusted width for mobile screens */
     height: 40px; /* Adjusted height for mobile screens */
   }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav a {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom of each menu item */
+    padding-bottom: 10px; /* Optional padding to separate items visually */
+  }
+
+  /* Underline effect below the text on hover */
+  .navbar-nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background-color: #511527; /* Adjust the color of the underline */
+    transform: scaleX(0); /* Initially set to no width */
+    transform-origin: right;
+    transition: transform 0.3s ease; /* Add smooth transition for underline */
+  }
+
+  /* Scale up the underline on hover */
+  .navbar-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
-
-
-/* Navbar link styling */
-.navbar-nav a {
-  text-decoration: none;
-  position: relative;
-}
-
-/* Underline effect below the text on hover */
-.navbar-nav a:hover {
-  text-decoration: none;
-}
-
-.navbar-nav a:hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: 160%; /* Position it below the text */
-  left: 0;
-  background-color: #511527; /* Adjust the color of the underline */
-}
-
 
 
 /* Navbar.css */
 
-/* Your existing styles */
+/* ... Your existing styles ... */
+
+/* Media query for screens up to 991px wide (typical tablet screens) */
+@media only screen and (max-width: 991px) {
+  .navbar-nav a {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom of each menu item */
+    padding-bottom: 10px; /* Optional padding to separate items visually */
+  }
+}
 
 /* Media query for screens up to 767px wide (typical mobile screens) */
 @media only screen and (max-width: 767px) {
-  .navbar-nav a:hover::after {
-    display: none; /* Remove the underline effect on mobile screens */
+  .navbar-nav a {
+    border-bottom: none; /* Remove the border for smaller screens */
   }
+
+  /* ... Your existing mobile styles ... */
 }
