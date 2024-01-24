@@ -1,119 +1,72 @@
-import React, { useState } from 'react';
+// ContactForm.js
+
+import React from 'react';
 import './ContactForm.css';
 
-function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    contactNumber: '',
-    roleSeeking: '',
-    resume: null,
-    message: '',
-  });
-
-  const handleChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  const handleFileChange = (event) => {
-    setFormData({
-      ...formData,
-      resume: event.target.files[0],
-    });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // Handle form submission here (e.g., send data to a server)
-    console.log(formData);
-  };
-
+const ContactForm = () => {
   return (
-      <div>
-       
-        <form onSubmit={handleSubmit}>
-      <div className="form-header">
-        <h2 style={{ backgroundColor: '#806444', color: '#f9f7ef', padding: '15px', textAlign: 'center' }}>
-          Let's Create Your Story
-        </h2>
+    <div className='careerpage'>
+      <div className="section" id="join-section">
+        <h2>Joining The Stories Team</h2>
+        <p>
+          Stories Design Studio, an interior designing firm, based in Bangalore, has its foundation in people with a passion for creating something unique. We are always looking for talented people and would love to hear from you. If you are interested in joining our team, write to us at <a href="mailto:hr@storiesdesignstudio.com">hr@storiesdesignstudio.com</a> to submit your resume and portfolio.
+        </p>
       </div>
-      <div className="form-body">
-      <div className="form-row">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          placeholder="Name"
-        />
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-          placeholder="Last Name"
-        />
-      </div>
+     
+      <div className="contact-container">
+        <div className="sections" id="your-story-section">
+          <h2>Lets create Your Story</h2>
+        </div>
 
-      <div className="form-row">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          placeholder="Email"
-        />
-        <input
-          type="tel"
-          id="contactNumber"
-          name="contactNumber"
-          value={formData.contactNumber}
-          onChange={handleChange}
-          required
-          placeholder="Contact Number"
-        />
-      </div>
-      <div className="form-row">
-          <select
-            id="roleSeeking"
-            name="roleSeeking"
-            value={formData.roleSeeking}
-            onChange={handleChange}
-            required
-          >
-            <option value="">I'm Looking For a Full-Time Role</option>
+        <div className="section" id="form-section">
+          <form>
+            <div className="form-row">
+              <div className="form-group">
+                <input type="text" id="firstName" name="firstName" placeholder='First Name:' />
+              </div>
+              <div className="form-group">
+                <input type="text" id="lastName" name="lastName" placeholder='Last Name:' />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <input type="email" id="email" name="email" placeholder='Email:' />
+              </div>
+              <div className="form-group">
+                <input type="text" id="contactNo" name="contactNo" placeholder='Contact No:' />
+              </div>
+            </div>
+
+           
+            <div className="form-row">
+              <div className="form-group">
+                
+                <select id="role" name="role">
+                <option value="">I'm Looking For a Full-Time Role</option>
             <option value="internship">I'm Looking For a Internship</option>
-          </select>
-        </div>
+                </select>
+              </div>
+              <div className="form-group">
+                <label htmlFor="cvUpload">Upload Your CV:</label>
+                <input type="file" id="cvUpload" name="cvUpload" />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-group full-width"> {/* Updated class to make it full width */}
+                <textarea id="interest" name="interest" placeholder='I am interested in:' rows="4" />
+              </div>
+            </div>
 
-        <div className="form-row">
-          <label htmlFor="resume">Upload Your CV:</label>
-          <input type="file" id="resume" name="resume" onChange={handleFileChange} required  />
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            placeholder="Hello I'm interested in..."
-          />
+
+            <div className="form-row">
+              <button type="submit">Send</button>
+            </div>
+          </form>
         </div>
-        <button type="submit" className="small-button">Send</button>
       </div>
-    </form>
-      </div>  
-    
+    </div>
   );
-}
+};
 
 export default ContactForm;
