@@ -4,6 +4,8 @@ import React from 'react';
 import Revathi from '../../components/Team/Revathi/Revathi';
 import Teamcard from '../../components/Team/Teamcard/Teamcard';
 import PagePath from '../../components/PagePath'; // Import the PagePath component
+import StickyEnquiryButton from '../../components/StickyEnquiryButton/StickyEnquiryButton';
+import StickyIcons from '../../components/StickyIcons/StickyIcons';
 
 import './Team.css'
 import HorizontalLine from '../../components/Team/HorizontalLine';
@@ -23,6 +25,8 @@ const Team = () => {
     
     <div>
     
+    <StickyIcons />
+      <StickyEnquiryButton />
     <HorizontalLine/>
     <PagePath path="Team" /> 
     
@@ -45,3 +49,9 @@ const Team = () => {
 };
 
 export default Team;
+
+
+
+
+
+

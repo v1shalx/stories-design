@@ -7,7 +7,7 @@ import Logomedia from '../components/Media/Logomedia/Logomedia';
 const Media = () => {
     return (
       <div>
-      
+       
       <Logomedia/>
         
       </div>
@@ -15,3 +15,9 @@ const Media = () => {
   };
   
   export default Media;
+
+
+
+
+
+  

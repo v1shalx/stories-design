@@ -12,10 +12,13 @@ import Carousel from '../../components/Home/Carousel/Carousel';
 import Clientsay from '../../components/Home/Clientsay/Clientsay';
 import ProductiveTalk from '../../components/Home/ProductiveTalk/ProductiveTalk';
 
-
+import StickyEnquiryButton from '../../components/StickyEnquiryButton/StickyEnquiryButton';
+import StickyIcons from '../../components/StickyIcons/StickyIcons';
 const Home = () => {
   return (
     <div>
+    <StickyIcons />
+      <StickyEnquiryButton />
       <Carousel/>
     <WelcomeTo/>
     <WeOperate/>
@@ -31,3 +34,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
