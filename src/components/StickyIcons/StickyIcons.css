@@ -20,15 +20,17 @@
 
 /* Additional styling for individual icons */
 .whatsapp-icon {
-  color: #25d366; /* WhatsApp color */
+  color: white; /* WhatsApp color */
   background: #c49635;
   width: 40px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .call-icon {
-  color: #007bff; /* Call icon color */
+  color: white; /* Call icon color */
   width: 40px;
   text-align: center;
   background: #c49635;
+  border-radius: 5px;
 }
