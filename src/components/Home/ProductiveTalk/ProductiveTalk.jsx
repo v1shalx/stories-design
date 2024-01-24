@@ -9,7 +9,7 @@ const ProductiveTalk = () => {
             {/* Left Box */}
             <div className="productivetalkleft-box">
                 <div className="productivetalktitle">Let's have a productive talk.</div>
-                <div className="divider"></div>
+                <div className="customes-divider"></div>
                 <div className="form-box">
 
                     <input type="text" id="name" className="input-box" placeholder='Name' />

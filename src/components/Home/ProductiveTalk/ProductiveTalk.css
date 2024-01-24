@@ -5,14 +5,22 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    background-color: #d2d3b0;
+    background-color: #f9f7ef;
     padding: 40px;
 }
 
-.productivetalkleft-box,
-.productivetalkright-box {
-    border: 2px solid black;
+.productivetalkleft-box
+{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
     width: 40%;
+}
+
+.productivetalkright-box{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
+
 }
 
 .productivetalkleft-box {
@@ -30,18 +38,26 @@
     color: #511527;
 }
 
-.divider {
+.customes-divider {
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #511212;
+    width: 20%;
+    
 }
 
 .form-box {
     margin-bottom: 20px;
     padding: 20px; /* Adjusted padding for better consistency */
     box-sizing: border-box;
-    border: 2px solid black;
+    
+   /* Apply a white shadow to a border */
+
+   
+    box-shadow: 0 0 10px rgba(172, 134, 134, 0.7);
 }
+
+
 
 .input-label {
     display: block;
