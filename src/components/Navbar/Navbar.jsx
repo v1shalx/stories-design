@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,32 +15,32 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${isMenuOpen ? 'active' : ''}`}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <img
-            src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/stories-logo.png"
-            alt="Logo"
-            width="300"
-            height="80"
-            className="d-inline-block align-top"
-          />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={toggleMenu}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+    <div className="container-fluid">
+      <a className="navbar-brand" href="#">
+        <img
+          src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/stories-logo.png"
+          alt="Logo"
+          width="300"
+          height="80"
+          className="d-inline-block align-top"
+        />
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        onClick={toggleMenu}
+      >
+        {isMenuOpen ? <FontAwesomeIcon icon={faTimes} /> : <span className="navbar-toggler-icon"></span>}
+      </button>
+      <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
-          <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={toggleMenu}>
-                Home
-              </Link>
-            </li>
+        <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <Link to="/" className="nav-link" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
             <li className="nav-item">
               <Link to="/about-us" className="nav-link" onClick={toggleMenu}>
                 About Us
