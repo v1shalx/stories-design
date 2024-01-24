@@ -31,6 +31,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    width:50%;
   }
   
   .primary-btnrecedential span {
@@ -94,6 +95,12 @@
     .recedentialright-section img{
         height: 300px;
         width: 100%;
+    }
+    .primary-btnrecedential {
+      background-color: #511527;
+      color: #fff;
+      width: 100%;
+      
     }
 
   }
