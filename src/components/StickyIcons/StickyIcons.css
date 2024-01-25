@@ -1,21 +1,20 @@
 /* Add your styles for StickyIcons here */
 .sticky-icons-container {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    /* Add styles for WhatsApp and call icons */
-    
-  }
-  
-  .whatsapp-icon,
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Set a high z-index value to ensure it's on top */
+}
+
+.whatsapp-icon,
 .call-icon {
   font-size: 24px; /* Adjust the font size as needed */
   margin-right: 10px; /* Add margin between icons */
   margin-top: 5px;
- 
+  z-index: 1001; /* Set a higher z-index value for icons */
 }
 
 /* Additional styling for individual icons */

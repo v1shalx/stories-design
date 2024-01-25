@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img
-            src="https://storiesdesignstudio.com/wp-content/uploads/2023/01/stories-logo.png"
+            src="./images/sarchilogo.png"
             alt="Logo"
             width="300"
             height="80"
